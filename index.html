@@ -5,147 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GG Allin | Punk's Underground Terror</title>
     <style>
-        /* Punk Rock Aesthetic Styling */
         body {
+            background-color: #111;
+            color: #eee;
             font-family: 'Courier New', Courier, monospace;
-            background-color: #0d0d0d;
-            color: #e0e0e0;
             line-height: 1.6;
-            margin: 0;
-            padding: 0;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
         }
-
         header {
-            background-color: #000;
-            border-bottom: 5px solid #990000;
-            padding: 40px 20px;
+            border-bottom: 3px double #ff0000;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
             text-align: center;
         }
-
-        header h1 {
+        h1 {
             color: #ff0000;
-            font-size: 3.5rem;
+            font-size: 3rem;
             margin: 0;
-            text-transform: uppercase;
-            letter-spacing: -2px;
-            text-shadow: 3px 3px 0px #fff;
+            letter-spacing: 3px;
         }
-
-        header p {
+        .tagline {
             font-style: italic;
-            color: #aaa;
-            font-size: 1.2rem;
+            margin: 10px 0;
+            color: #888;
         }
-
         nav {
             margin-top: 20px;
         }
-
         nav a {
             color: #fff;
             text-decoration: none;
+            margin: 0 15px;
             font-weight: bold;
-            padding: 5px 15px;
-            border: 1px dashed #ff0000;
-            margin: 5px;
-            background: #222;
-            display: inline-block;
+            border: 1px solid #fff;
+            padding: 5px 10px;
         }
-
         nav a:hover {
-            background-color: #ff0000;
-            color: #000;
+            background-color: #fff;
+            color: #111;
         }
-
-        main {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
-
-        section {
-            margin-bottom: 60px;
-            background: #151515;
-            padding: 25px;
-            border: 2px solid #333;
-        }
-
         h2 {
-            color: #fff;
-            border-bottom: 3px double #ff0000;
-            padding-bottom: 10px;
-            text-transform: uppercase;
+            color: #ff0000;
+            border-bottom: 1px solid #444;
+            padding-bottom: 5px;
+            margin-top: 40px;
         }
-
-        /* Timeline Styling */
-        .timeline {
-            border-left: 3px solid #ff0000;
-            padding-left: 20px;
-            margin-left: 10px;
-        }
-
-        .timeline-item {
-            margin-bottom: 25px;
-            position: relative;
-        }
-
-        .timeline-date {
+        .date {
+            color: #ff0000;
             font-weight: bold;
-            color: #ff0000;
-            font-size: 1.2rem;
         }
-
-        /* Discography & Shows Grid Styling */
-        .item-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
         }
-
-        .card {
-            background: #000;
-            border: 1px solid #444;
-            padding: 15px;
+        li {
+            margin-bottom: 10px;
         }
-
-        .card strong {
-            color: #ff0000;
-            display: block;
+        .show-item {
+            margin-bottom: 20px;
         }
-
-        .card em {
-            color: #aaa;
-            font-size: 0.9rem;
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        /* Photo Gallery Styling */
-        .photo-gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-        }
-
-        .photo-placeholder {
-            background: #222;
-            border: 2px dashed #555;
-            height: 200px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            font-size: 0.9rem;
-            color: #888;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px;
-            background-color: #000;
-            border-top: 3px solid #ff0000;
-            font-size: 0.8rem;
-            color: #666;
+        .show-title {
+            font-weight: bold;
+            color: #fff;
         }
     </style>
 </head>
@@ -153,129 +76,60 @@
 
     <header>
         <h1>GG ALLIN</h1>
-        <p>"Live fast, die fast, dangerous rock 'n' roll."</p>
+        <p class="tagline">"Live fast, die fast, dangerous rock 'n' roll."</p>
         <nav>
-            <a href="#timeline">Timeline</a>
-            <a href="#discography">Discography</a>
-            <a href="#shows">Live Shows</a>
-            <a href="#photos">Photos</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="blog.html">Blog</a>
         </nav>
     </header>
 
     <main>
-
-        <!-- TIMELINE SECTION -->
-        <section id="timeline">
+        <section>
             <h2>The Timeline of Chaos</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <span class="timeline-date">August 29, 1956</span>
-                    <p>Born "Jesus Christ Allin" in Lancaster, New Hampshire. Raised in a rural cabin by an abusive, fanatical father. His brother Merle Jr. couldn't pronounce Jesus, giving him the nickname "GG".</p>
-                </div>
-                <div class="timeline-item">
-                    <span class="timeline-date">1977 – 1984</span>
-                    <p>Starts fronting <strong>The Jabbers</strong>, playing raw, melodic power-pop influenced punk rock. Releases his debut album.</p>
-                </div>
-                <div class="timeline-item">
-                    <span class="timeline-date">Late 1980s</span>
-                    <p>Shifts into extreme shock-rock behavior. His live performances become infamous for severe self-mutilation, violence, and dynamic crowd confrontations.</p>
-                </div>
-                <div class="timeline-item">
-                    <span class="timeline-date">1989 – 1993</span>
-                    <p>Spends significant time in prison for felony assault. Appears on mainstream daytime television talk shows like <em>Geraldo</em> and <em>Jerry Springer</em> while briefly sober.</p>
-                </div>
-                <div class="timeline-item">
-                    <span class="timeline-date">June 27 – 28, 1993</span>
-                    <p>Plays his final, chaotic show at The Gas Station in NYC. Passes away from an accidental heroin overdose the following morning at age 36.</p>
-                </div>
-            </div>
+            <p><span class="date">August 29, 1956</span><br>Born "Jesus Christ Allin" in Lancaster, New Hampshire. Raised in a rural cabin by an abusive, fanatical father. His brother Merle Jr. couldn't pronounce Jesus, giving him the nickname "GG".</p>
+            <p><span class="date">1977 – 1984</span><br>Starts fronting <strong>The Jabbers</strong>, playing raw, melodic power-pop influenced punk rock. Releases his debut album.</p>
+            <p><span class="date">Late 1980s</span><br>Shifts into extreme shock-rock behavior. His live performances become infamous for severe self-mutilation, violence, and dynamic crowd confrontations.</p>
+            <p><span class="date">1989 – 1993</span><br>Spends significant time in prison for felony assault. Appears on mainstream daytime television talk shows like <em>Geraldo</em> and <em>Jerry Springer</em> while briefly sober.</p>
+            <p><span class="date">June 27 – 28, 1993</span><br>Plays his final, chaotic show at The Gas Station in NYC. Passes away from an accidental heroin overdose the following morning at age 36.</p>
         </section>
 
-        <!-- EXPANDED DISCOGRAPHY SECTION -->
-        <section id="discography">
+        <section>
             <h2>Complete Core Discography</h2>
-            <p>A comprehensive timeline of GG Allin's rawest studio records, cassettes, and essential posthumous releases:</p>
-            <div class="item-grid">
-                <div class="card">
-                    <strong>1980</strong>
-                    Always Was, Is and Always Shall Be (with The Jabbers)
-                </div>
-                <div class="card">
-                    <strong>1984</strong>
-                    Eat My Fuc (with The Scumfucs)
-                </div>
-                <div class="card">
-                    <strong>1985</strong>
-                    You'll Never Tame Me (with The Scumfucs)
-                </div>
-                <div class="card">
-                    <strong>1987</strong>
-                    You Give Love a Bad Name (with The Holy Men)
-                </div>
-                <div class="card">
-                    <strong>1988</strong>
-                    Freaks, Faggots, Drunks & Junkies
-                </div>
-                <div class="card">
-                    <strong>1989</strong>
-                    The Suicide Sessions (Cassette-only release)
-                </div>
-                <div class="card">
-                    <strong>1990</strong>
-                    Beautiful Afterbirth: Fucked & Framed
-                </div>
-                <div class="card">
-                    <strong>1991</strong>
-                    Murder Junkies (with Antiseen)
-                </div>
-                <div class="card">
-                    <strong>1993</strong>
-                    War in My Head – I'm Your Enemy (with The Criminal Quartet)
-                </div>
-                <div class="card">
-                    <strong>1993</strong>
-                    Brutality and Bloodshed for All (with The Murder Junkies)
-                </div>
-                <div class="card">
-                    <strong>1995</strong>
-                    Carnival of Excess (Posthumous country/acoustic rock)
-                </div>
-            </div>
+            <ul>
+                <li><strong>1980</strong> Always Was, Is and Always Shall Be (with The Jabbers)</li>
+                <li><strong>1984</strong> Eat My Fuc (with The Scumfucs)</li>
+                <li><strong>1985</strong> You'll Never Tame Me (with The Scumfucs)</li>
+                <li><strong>1987</strong> You Give Love a Bad Name (with The Holy Men)</li>
+                <li><strong>1988</strong> Freaks, Faggots, Drunks & Junkies</li>
+                <li><strong>1989</strong> The Suicide Sessions (Cassette-only release)</li>
+                <li><strong>1990</strong> Beautiful Afterbirth: Fucked & Framed</li>
+                <li><strong>1991</strong> Murder Junkies (with Antiseen)</li>
+                <li><strong>1993</strong> War in My Head – I'm Your Enemy (with The Criminal Quartet)</li>
+                <li><strong>1993</strong> Brutality and Bloodshed for All (with The Murder Junkies)</li>
+                <li><strong>1995</strong> Carnival of Excess (Posthumous country/acoustic rock)</li>
+            </ul>
         </section>
 
-        <!-- NEW LIVE SHOWS SECTION -->
-        <section id="shows">
+        <section>
             <h2>Infamous Live Shows & Gig History</h2>
-            <p>GG Allin's gigs rarely lasted more than a few songs before ending in property damage, venue shutdowns, or police intervention. Here are some historical performance milestones:</p>
-            <div class="item-grid">
-                <div class="card">
-                    <strong>1980 – Cantones</strong>
-                    <em>Boston, MA</em>
-                    Early era shows performing melodic punk alongside The Jabbers. Fast-paced, high energy, but before the extreme shock antics began.
-                </div>
-                <div class="card">
-                    <strong>1985 – Peoria Theater</strong>
-                    <em>Peoria, IL</em>
-                    Widely cited as the first show where his extreme, modern "shock-rock" performance methods completely manifested, changing his live dynamic forever.
-                </div>
-                <div class="card">
-                    <strong>1988 – L'Amour</strong>
-                    <em>Brooklyn, NY</em>
-                    A highly volatile, chaotic performance that was heavily bootlegged on VHS tapes throughout the underground tape-trading circles of the late 80s.
-                </div>
-                <div class="card">
-                    <strong>1991 – Space Fish Lounge</strong>
-                    <em>Orlando, FL</em>
-                    An infamous concert with The Murder Junkies that ended in a massive venue riot and resulted in another local police arrest warrant.
-                </div>
-                <div class="card">
-                    <strong>June 27, 1993 – The Gas Station</strong>
-                    <em>New York City, NY</em>
-                    The final performance. After the power was cut a few songs into the set, he led a massive crowd of punks on a walking riot through Manhattan's East Village just hours before his death.
-                </div>
+            <div class="show-item">
+                <span class="show-title">1980 – Cantones</span> (<em>Boston, MA</em>)<br>Early era shows performing melodic punk alongside The Jabbers. Fast-paced, high energy, but before the extreme shock antics began.
+            </div>
+            <div class="show-item">
+                <span class="show-title">1985 – Peoria Theater</span> (<em>Peoria, IL</em>)<br>Widely cited as the first show where his extreme, modern "shock-rock" performance methods completely manifested, changing his live dynamic forever.
+            </div>
+            <div class="show-item">
+                <span class="show-title">1988 – L'Amour</span> (<em>Brooklyn, NY</em>)<br>A highly volatile, chaotic performance that was heavily bootlegged on VHS tapes throughout the underground tape-trading circles of the late 80s.
+            </div>
+            <div class="show-item">
+                <span class="show-title">1991 – Space Fish Lounge</span> (<em>Orlando, FL</em>)<br>An infamous concert with The Murder Junkies that ended in a massive venue riot and resulted in another local police arrest warrant.
+            </div>
+            <div class="show-item">
+                <span class="show-title">June 27, 1993 – The Gas Station</span> (<em>New York City, NY</em>)<br>The final performance. After the power was cut a few songs into the set, he led a massive crowd of punks on a walking riot through Manhattan's East Village just hours before his death.
             </div>
         </section>
+    </main>
 
-        <!-- PHOTOS SECTION -->
-        <section id="photos">
-            <h2>Photo Gallery Placeholder</h2>
+</body>
+</html>
